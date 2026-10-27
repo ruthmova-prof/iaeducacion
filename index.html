@@ -1,0 +1,301 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA en Educación - Curso 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #764ba2;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .welcome-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 1.5rem;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .unit-card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .unit-card h3 {
+            margin-top: 0;
+        }
+        
+        .resource-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .resource-link:hover {
+            background: #764ba2;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .activity-item {
+            background: #fff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #764ba2;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .activity-date {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .contact-item {
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item strong {
+            color: #667eea;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .icon {
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 IA en Educación</h1>
+            <p class="subtitle">Código: 2600000 / 2026-3 / G1</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-curso">Sobre el Curso</a></li>
+            <li><a href="#unidades">Unidades</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#cronograma">Cronograma</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenida</h2>
+            <div class="welcome-box">
+                <p><strong>¡Bienvenidos al curso de Inteligencia Artificial en Educación!</strong></p>
+                <p>Este espacio está diseñado para explorar las posibilidades transformadoras de la IA en contextos educativos, desarrollando competencias para diseñar experiencias de aprendizaje innovadoras que integren herramientas de inteligencia artificial de manera crítica y pedagógicamente fundamentada.</p>
+            </div>
+            
+            <h3>Propósito del Curso</h3>
+            <p>El curso tiene como propósito capacitar a educadores en el uso pedagógico de la inteligencia artificial, promoviendo el diseño de experiencias formativas que aprovechen las herramientas de IA para enriquecer los procesos de enseñanza y aprendizaje. A través de un enfoque práctico y reflexivo, los participantes desarrollarán proyectos educativos que integren chatbots, portafolios digitales y diseños curriculares innovadores.</p>
+        </section>
+
+        <section id="sobre-curso">
+            <h2>Sobre el Curso</h2>
+            
+            <h3>Descripción</h3>
+            <p>Este curso aborda la integración de la inteligencia artificial en educación desde una perspectiva pedagógica y tecnológica. Los participantes explorarán conceptos fundamentales de IA, analizarán herramientas educativas basadas en IA, y diseñarán experiencias de formación que incorporen estas tecnologías de manera ética y efectiva. El curso combina fundamentos teóricos con talleres prácticos para la creación de recursos educativos innovadores.</p>
+            
+            <h3>Objetivos de Aprendizaje</h3>
+            <ul>
+                <li>Comprender los conceptos básicos de inteligencia artificial y su aplicación en contextos educativos</li>
+                <li>Analizar críticamente las implicaciones éticas, pedagógicas y sociales del uso de IA en educación</li>
+                <li>Diseñar experiencias de aprendizaje que integren herramientas de IA de manera fundamentada</li>
+                <li>Desarrollar competencias para la creación de chatbots educativos, portafolios digitales y diseños curriculares innovadores</li>
+                <li>Evaluar y seleccionar herramientas de IA apropiadas para diferentes contextos y necesidades educativas</li>
+            </ul>
+            
+            <h3>Competencias a Desarrollar</h3>
+            <ul>
+                <li><strong>Competencia tecnológica:</strong> Manejo de herramientas de IA aplicadas a la educación</li>
+                <li><strong>Competencia pedagógica:</strong> Diseño de experiencias formativas innovadoras con IA</li>
+                <li><strong>Competencia crítica:</strong> Análisis reflexivo sobre el impacto de la IA en educación</li>
+                <li><strong>Competencia creativa:</strong> Desarrollo de recursos educativos digitales originales</li>
+                <li><strong>Competencia ética:</strong> Uso responsable y fundamentado de tecnologías de IA</li>
+            </ul>
+        </section>
+
+        <section id="unidades">
+            <h2>Unidades del Curso</h2>
+            
+            <div class="unit-card">
+                <h3>Unidad 1: Fundamentos de IA en Educación</h3>
+                <p><strong>Tema:</strong> Conceptos básicos de inteligencia artificial y su aplicación educativa</p>
+                <p><strong>Contenidos:</strong></p>
+                <ul>
+                    <li>Introducción a la inteligencia artificial</li>
+                    <li>Historia y evolución de la IA</li>
+                    <li>Aplicaciones de IA en contextos educativos</li>
+                    <li>Panorama actual de herramientas educativas con IA</li>
+                </ul>
+                <p><strong>Materiales:</strong></p>
+                <a href="#" class="resource-link">📄 Documento autor</a>
+                <a href="#" class="resource-link">🗺️ Mapa conceptual</a>
+                <a href="#" class="resource-link">📊 Presentaciones</a>
+
